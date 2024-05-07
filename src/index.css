@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+
+.readBtn {
+    @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+.btn {
+    @apply border-2 border-black rounded-lg p-2 text-white bg-black;
+}
+
+.card {
+    @apply w-80 md:w-80 xsm:h-[28rem] sm:w-56 lg:w-[24rem] h-[32rem] lg:h-[30rem] md:h-[28rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-5;
+}
+
+.title {
+    @apply mb-2  xsm:text-lg  text-2xl lg:text-2xl font-bold tracking-tight md:text-xl sm:text-base text-gray-900 dark:text-white;
+}
+
+.description {
+    @apply mb-3 xsm:text-sm  sm:text-xs lg:text-base md:text-sm font-normal text-gray-700 dark:text-gray-400  md:overflow-auto md:text-wrap lg:overflow-auto lg:text-wrap
+}
+
+
+
+.btn:disabled {
+    opacity: 80%;
+    cursor: not-allowed;
+}
+
+@tailwind utilities;
